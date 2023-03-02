@@ -20,7 +20,7 @@ class Auth extends BaseController {
     public function index(){
         if($this->accounts){
             return $this->getResponse([
-                "status" => "ok",
+                "status" => $this->accounts,
             ], ResponseInterface::HTTP_CREATED);
         }
         else{
