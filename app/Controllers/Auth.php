@@ -18,8 +18,7 @@ class Auth extends BaseController {
         $this->accounts = new AccountsModel();
     }
     public function index(){
-
-        echo "hola";
+       
     }
 
     public function login(){
