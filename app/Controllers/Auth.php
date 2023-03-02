@@ -10,17 +10,24 @@ use App\Libraries\Message;
 use App\Libraries\StringMake;
 
 class Auth extends BaseController {
+    public $accounts;
     public function __construct()
     {
 		helper(["url", "form"]);
 
         $this->accounts = new AccountsModel();
-        
     }
     public function index(){
-        return $this->getResponse([
-            "status" => "ok",
-        ], ResponseInterface::HTTP_CREATED);
+        if($this->accounts){
+            return $this->getResponse([
+                "status" => "ok",
+            ], ResponseInterface::HTTP_CREATED);
+        }
+        else{
+            return $this->getResponse([
+                "status" => "database error conection",
+            ], ResponseInterface::HTTP_CREATED);
+        }
     }
 
     public function login(){
@@ -28,7 +35,6 @@ class Auth extends BaseController {
                 'username' => 'required|is_not_unique[accounts.username]',
                 'password' => 'required|min_length[5]|max_length[12]',
             ];
-    
             $errors = [
                 'password' => [
                     'required' => 'Your password is required'
