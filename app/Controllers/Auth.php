@@ -18,16 +18,8 @@ class Auth extends BaseController {
         $this->accounts = new AccountsModel();
     }
     public function index(){
-        if($this->accounts){
-            return $this->getResponse([
-                "status" => $this->accounts,
-            ], ResponseInterface::HTTP_CREATED);
-        }
-        else{
-            return $this->getResponse([
-                "status" => "database error conection",
-            ], ResponseInterface::HTTP_CREATED);
-        }
+
+        echo "hola";
     }
 
     public function login(){
