@@ -26,7 +26,7 @@ class Cors extends \Fluent\Cors\Config\Cors
      *
      * @var array
      */
-    public $allowedHeaders = ['https://accesoscse.com/'];
+    public $allowedHeaders = ['*'];
 
     /**
      * --------------------------------------------------------------------------
@@ -49,7 +49,7 @@ class Cors extends \Fluent\Cors\Config\Cors
      *
      * @var array
      */
-    public $allowedOrigins = ['https://accesoscse.com/'];
+    public $allowedOrigins = ['*'];
 
     /**
      * --------------------------------------------------------------------------
@@ -60,7 +60,7 @@ class Cors extends \Fluent\Cors\Config\Cors
      *
      * @var array
      */
-    public $allowedOriginsPatterns = ['https://accesoscse.com/'];
+    public $allowedOriginsPatterns = ['*'];
 
     /**
      * --------------------------------------------------------------------------
