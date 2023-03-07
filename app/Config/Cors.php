@@ -49,7 +49,7 @@ class Cors extends \Fluent\Cors\Config\Cors
      *
      * @var array
      */
-    public $allowedOrigins = ['*.cabo-norte.vercel.app'];
+    public $allowedOrigins = ['https://cabo-norte.vercel.app/signin'];
 
     /**
      * --------------------------------------------------------------------------
@@ -60,7 +60,7 @@ class Cors extends \Fluent\Cors\Config\Cors
      *
      * @var array
      */
-    public $allowedOriginsPatterns = ['/cabo-norte.vercel.app\d/'];
+    public $allowedOriginsPatterns = ['https://cabo-norte.vercel.app'];
 
     /**
      * --------------------------------------------------------------------------
