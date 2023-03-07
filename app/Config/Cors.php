@@ -26,7 +26,7 @@ class Cors extends \Fluent\Cors\Config\Cors
      *
      * @var array
      */
-    public $allowedHeaders = ['https://cabo-norte.vercel.app/'];
+    public $allowedHeaders = ['Access-Control-Allow-Origin'];
 
     /**
      * --------------------------------------------------------------------------
@@ -37,7 +37,7 @@ class Cors extends \Fluent\Cors\Config\Cors
      *
      * @var array
      */
-    public $allowedMethods = ['*'];
+    public $allowedMethods = ['GET,POST,PUT,DELETE'];
 
     /**
      * --------------------------------------------------------------------------
@@ -49,7 +49,7 @@ class Cors extends \Fluent\Cors\Config\Cors
      *
      * @var array
      */
-    public $allowedOrigins = ['https://cabo-norte.vercel.app/'];
+    public $allowedOrigins = ['*.cabo-norte.vercel.app'];
 
     /**
      * --------------------------------------------------------------------------
@@ -60,7 +60,7 @@ class Cors extends \Fluent\Cors\Config\Cors
      *
      * @var array
      */
-    public $allowedOriginsPatterns = ['https://cabo-norte.vercel.app/'];
+    public $allowedOriginsPatterns = ['/cabo-norte.vercel.app\d/'];
 
     /**
      * --------------------------------------------------------------------------
