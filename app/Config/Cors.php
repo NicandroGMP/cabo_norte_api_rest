@@ -26,7 +26,7 @@ class Cors extends \Fluent\Cors\Config\Cors
      *
      * @var array
      */
-    public $allowedHeaders = ['*'];
+    public $allowedHeaders = ['https://cabo-norte.vercel.app/'];
 
     /**
      * --------------------------------------------------------------------------
@@ -49,7 +49,7 @@ class Cors extends \Fluent\Cors\Config\Cors
      *
      * @var array
      */
-    public $allowedOrigins = ['*'];
+    public $allowedOrigins = ['https://cabo-norte.vercel.app/'];
 
     /**
      * --------------------------------------------------------------------------
@@ -60,7 +60,7 @@ class Cors extends \Fluent\Cors\Config\Cors
      *
      * @var array
      */
-    public $allowedOriginsPatterns = ['*'];
+    public $allowedOriginsPatterns = ['https://cabo-norte.vercel.app/'];
 
     /**
      * --------------------------------------------------------------------------
